@@ -128,8 +128,7 @@ with mp_pose.Pose(
         results = pose.process(image)
         if results.pose_landmarks:
             for index, landmarks in enumerate(results.pose_landmarks.landmark):
-                # print(keyPoint[index], landmarks.x, landmarks.y, landmarks.z)
-                # print(len(results.pose_landmarks.landmark))
+                # print(index, landmarks.x, landmarks.y, landmarks.z)
                 res_point.append(landmarks.x)
                 res_point.append(landmarks.y)
                 res_point.append(landmarks.z)
